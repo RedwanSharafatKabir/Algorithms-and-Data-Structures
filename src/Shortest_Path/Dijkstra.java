@@ -1,7 +1,6 @@
 package Shortest_Path;
 
-/// dijkstra & prim's almost same. but, aktu different ase. computer a screen shot ase. dekho.
-/// this algorithm does not work any negative weighted value
+// this algorithm does not work for any negative weighted value
 
 import java.util.*;
 //import java.util.LinkedList;
@@ -107,6 +106,7 @@ public class Dijkstra {
 			g.addEdge(a, b, cin.nextInt());
 			
 			// for printing
+                        
 			g.set.add(a);
 			g.set.add(b);
 		}
