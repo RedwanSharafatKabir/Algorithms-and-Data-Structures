@@ -1,5 +1,7 @@
 package Sorting_and_Searching;
+
 import java.util.*;
+
 public class ATMbooth {
     public static void main(String args []){
         Scanner s = new Scanner(System.in);
@@ -21,7 +23,7 @@ public class ATMbooth {
                 System.out.println("Now You have BDT "+(12000.00-t)+" in your account.");
             }
             break;
-        }
+        } 
         if(x!=1234)
             System.out.println("Invalid password.\nPlease enter a valid password.");
     }
