@@ -1,6 +1,6 @@
 package Shortest_Path;
 
-// this algorithm does not work for any negative weighted value
+/// this algorithm does not work for any negative weighted value
 
 import java.util.*;
 //import java.util.LinkedList;
