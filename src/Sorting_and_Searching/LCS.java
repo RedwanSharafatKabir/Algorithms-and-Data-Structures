@@ -2,7 +2,6 @@ package Sorting_and_Searching;
 import java.util.*;
 public class LCS {
     static void lcs(String X, String Y, int m, int n){
-        
         int[][] L = new int[m+1][n+1];
         
         for (int i=0; i<=m; i++){

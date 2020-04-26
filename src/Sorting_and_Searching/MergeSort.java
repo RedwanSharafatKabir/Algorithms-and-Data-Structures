@@ -1,9 +1,7 @@
 package Sorting_and_Searching;
 import java.util.*;
-public class MergeSort{
-    
+public class MergeSort {
     void merge(int a[],int l,int m,int r){
-        
         int n1 = m - l + 1;
         int n2 = r-m;
         int L[] = new int [n1];
@@ -18,7 +16,6 @@ public class MergeSort{
         int k = l;
         
         while (i < n1 && j < n2) {
-            
             if (L[i] <= R[j]) {
                 a[k] = L[i];
                 i++;
@@ -55,13 +52,18 @@ public class MergeSort{
         System.out.println();
     }
     public static void main(String args[]) {
-        int a[] = {12, 10, 13, 5, 6, 7, 8, 0, 9};
+//        int a[] = {12, 10, 13, 5, 6, 7, 8, 0, 9};
+        int a[] = new int[100];
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        for(int i=0;i<n;i++){
+            a[i] = s.nextInt();
+        }
         
         MergeSort ob = new MergeSort();
         ob.sort(a, 0, a.length-1);
- 
-        System.out.println("\nSorted array");
+        
+        System.out.print("\nSorted array: ");
         printArray(a);
     }
 }
- 
